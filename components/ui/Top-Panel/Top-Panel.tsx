@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import SearchBar from '@/components/ui/Search-Bar/SearchBar';
+import {ShoppingCart} from "lucide-react";
 
 
 export const navItem = [
@@ -78,6 +79,23 @@ export default function TopPanel () {
                                 ml-8 md:flex
                                 ">
                                 Search
+                            </button>
+                        </div>
+                        <div className=" ">
+                            {/* Shopping Cart*/}
+                            <button aria-leble = "Shopping Cart" className="
+                                    relative
+                                    p-2
+                                    text-muted-foreground
+                                    hover:text-foreground
+                                    transition-colors
+                                    duration-200
+                                    ">
+                                <ShoppingCart className="
+                                        h-7
+                                        w-10"
+                                />
+
                             </button>
                         </div>
                     </div>
