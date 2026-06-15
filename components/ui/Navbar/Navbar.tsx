@@ -33,7 +33,7 @@ export default function Navbar () {
                     {/* Loging and Signup */}
                     <div className="hidden md:flex  items-baseline space-x-2">
                         <button className="
-                        bg-gradient-to-r
+                        bg-linear-to-r
                         from-blue-600
                         to-purple-600
                         hover:from-green-400
@@ -48,7 +48,7 @@ export default function Navbar () {
                             Sign in
                         </button>
                         <button className="
-                        bg-gradient-to-r
+                        bg-linear-to-r
                         from-blue-600
                         to-purple-600
                         hover:from-green-400
