@@ -1,0 +1,88 @@
+import Link from "next/link";
+
+import SearchBar from '@/components/ui/Search-Bar/SearchBar';
+
+
+export const navItem = [
+    { name: 'Help', link: '/Help' },
+    { name: 'FQA', link: '/FQA' },
+    { name: 'Blog', link: '/Blog' },
+    { name: 'Official Partnerships', link: '/OfficialPartnerships' },
+];
+
+export default function TopPanel () {
+    return (
+        <nav className="
+        fixed
+        top-16
+        left-0
+        right-0
+        z-40
+        bg-background/95
+        backdrop-blur-md
+        border-b
+        border-border
+        transition-colors
+        duration-300
+        ">
+            <div className="
+            max-w-7xl
+            px-4
+            ">
+                <div className="
+                flex
+                justify-between
+                items-center
+                h-16
+                ">
+                    <div >
+                        <h1 className="
+                        text-2xl
+                        font-black
+                        font-heading
+                        text-primary">
+                            </h1>
+                    </div>
+                    {/* Desktop Navigation */}
+                    <div className="hidden md:flex ">
+                        <div className="flex items-baseline space-x-8">
+                            {navItem.map((item) => (
+                                <Link
+                                    key={item.link}
+                                    href={item.link}
+                                    className=""
+                                >
+                                    {item.name}
+                                </Link>
+                            ))}
+                        </div>
+                        <div className="
+                        ml-8
+                        md:flex
+                        ">
+                            <SearchBar/>
+                        </div>
+                        <div className=" ">
+                            <button className="
+                                bg-linear-to-r
+                                from-blue-600
+                                to-purple-600
+                                hover:from-green-400
+                                hover:to-indigo-600
+                                text-white
+                                transition-colors
+                                font-medium
+                                rounded-full
+                                px-6
+                                py-3
+                                ml-8 md:flex
+                                ">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    );
+}

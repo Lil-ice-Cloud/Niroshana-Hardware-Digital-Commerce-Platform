@@ -9,21 +9,51 @@ export const navItem = [
 
 export default function Navbar () {
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95
-    backdrop-blur-md border-b border-border transition-colors duration-300">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
-                    <div>
-                        <h1 className="text-2xl font-black font-heading text-primary">Niroshana Hardware.LK</h1>
+        <nav className="
+        fixed
+        top-0
+        left-0
+        right-0
+        z-50
+        bg-background/95
+        backdrop-blur-md
+        border-b
+        border-border
+        transition-colors
+        duration-300
+        ">
+            <div className="
+            max-w-7xl
+            mx-auto
+            px-4
+            sm:px-6
+            lg:px-8">
+                <div className="
+                flex
+                justify-between
+                items-center
+                h-16
+                ">
+                    <div >
+                        <h1 className="
+                        text-2xl
+                        font-black
+                        font-heading
+                        text-primary">
+                            Niroshana Hardware.LK</h1>
                     </div>
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex"> {/* Changed hidden to md:flex to make it visible */}
+                    <div className="hidden md:flex ">
                         <div className="flex items-baseline space-x-8">
                             {navItem.map((item) => (
                                 <Link
                                     key={item.link}
                                     href={item.link}
-                                    className="text-muted-foreground hover:text-primary transition-colors font-medium"
+                                    className="
+                                    hover:form-blue-700
+                                    hover:to-purple-600
+                                    transition-colors
+                                    font-medium"
                                 >
                                     {item.name}
                                 </Link>
@@ -31,7 +61,10 @@ export default function Navbar () {
                         </div>
                     </div>
                     {/* Loging and Signup */}
-                    <div className="hidden md:flex  items-baseline space-x-2">
+                    <div className="
+                    hidden md:flex
+                    items-baseline
+                    space-x-2">
                         <button className="
                         bg-linear-to-r
                         from-blue-600
@@ -59,7 +92,8 @@ export default function Navbar () {
                         rounded-full
                         px-6
                         py-3
-                        "> Sign up </button>
+                        "> Sign up
+                        </button>
                     </div>
                 </div>
             </div>
