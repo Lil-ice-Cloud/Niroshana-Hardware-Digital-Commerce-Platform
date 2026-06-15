@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import SearchBar from '@/components/ui/Search-Bar/SearchBar';
 import {ShoppingCart} from "lucide-react";
-
+import Hamburger from "@/components/ui/Hamburger/Hamburger";
 
 export const navItem = [
     { name: 'Help', link: '/Help' },
@@ -45,8 +45,16 @@ export default function TopPanel () {
                             </h1>
                     </div>
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex ">
-                        <div className="flex items-baseline space-x-8">
+                    <div className="
+                    hidden
+                    md:flex ">
+                        <div className="
+                        flex
+                        items-baseline
+                        space-x-8
+
+                        my-10
+                        ">
                             {navItem.map((item) => (
                                 <Link
                                     key={item.link}
@@ -63,7 +71,7 @@ export default function TopPanel () {
                         ">
                             <SearchBar/>
                         </div>
-                        <div className=" ">
+                        <div>
                             <button className="
                                 bg-linear-to-r
                                 from-blue-600
@@ -76,13 +84,16 @@ export default function TopPanel () {
                                 rounded-full
                                 px-6
                                 py-3
-                                ml-8 md:flex
+                                ml-8
+                                md:flex
+                                my-8
                                 ">
                                 Search
                             </button>
                         </div>
                         <div className=" ">
                             {/* Shopping Cart*/}
+                            {/* eslint-disable-next-line jsx-a11y/aria-props */}
                             <button aria-leble = "Shopping Cart" className="
                                     relative
                                     p-2
@@ -90,6 +101,7 @@ export default function TopPanel () {
                                     hover:text-foreground
                                     transition-colors
                                     duration-200
+                                    my-8
                                     ">
                                 <ShoppingCart className="
                                         h-7
@@ -98,7 +110,7 @@ export default function TopPanel () {
 
                             </button>
                         </div>
-                    </div>
+                    </div><Hamburger/>
                 </div>
             </div>
         </nav>

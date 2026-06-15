@@ -37,7 +37,7 @@ export default function SearchBar() {
                 text-foreground
                 border
                 border-input
-                rounded-md
+                rounded-md my-8
                 focus:outline-none
                 focus:ring-2
                 focus:ring-primary
