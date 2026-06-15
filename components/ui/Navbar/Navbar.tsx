@@ -31,9 +31,35 @@ export default function Navbar () {
                         </div>
                     </div>
                     {/* Loging and Signup */}
-                    <div className="hidden md:flex  items-baseline space-x-8">
-                        <button className="text-muted-foreground hover:text-primary transition-colors font-medium"> Login </button>
-                        <button className="text-muted-foreground hover:text-primary transition-colors font-medium"> Sign up </button>
+                    <div className="hidden md:flex  items-baseline space-x-2">
+                        <button className="
+                        bg-gradient-to-r
+                        from-blue-600
+                        to-purple-600
+                        hover:from-green-400
+                        hover:to-indigo-600
+                        text-white
+                        transition-colors
+                        font-medium
+                        rounded-full
+                        px-6
+                        py-3
+                        ">
+                            Sign in
+                        </button>
+                        <button className="
+                        bg-gradient-to-r
+                        from-blue-600
+                        to-purple-600
+                        hover:from-green-400
+                        hover:to-indigo-600
+                        text-white
+                        transition-colors
+                        font-medium
+                        rounded-full
+                        px-6
+                        py-3
+                        "> Sign up </button>
                     </div>
                 </div>
             </div>
