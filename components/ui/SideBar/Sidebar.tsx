@@ -1,7 +1,5 @@
 "use client";
-
 import { useState } from "react";
-import Link from "next/link";
 
 export default function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +14,7 @@ export default function Sidebar() {
                 p-5
                 flex
                 gap-5
+
                 ">
                     {/* Naw bar animation */}
                     <button onClick={toggleNav} className={`
@@ -57,7 +56,7 @@ export default function Sidebar() {
                 <div className={`
                 bg-gray-800 
                 text-white 
-                h-full 
+                h-screen 
                 w-48 
                 top-0 
                 p-5 

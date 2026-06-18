@@ -1,8 +1,7 @@
 import Link from "next/link";
-
 import SearchBar from '@/components/ui/Search-Bar/SearchBar';
 import {ShoppingCart} from "lucide-react";
-import HamMenu from "@/components/ui/Hamburger/Ham-menu";
+import Sidebar from "@/components/ui/SideBar/Sidebar";
 
 export const navItem = [
     { name: 'Help', link: '/Help' },
@@ -108,7 +107,23 @@ export default function TopPanel () {
 
                             </button>
                         </div>
-                    </div><HamMenu/>
+                    </div>
+                    {/* Sidebar Link to the top-panel */}
+                    <div
+                        className="
+                            fixed
+                            top-0
+                            left-0
+                            right-0
+                            border-b
+                            border-border
+                            transition-colors
+                            duration-300
+                            ">
+                        <div>
+                            <Sidebar/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
