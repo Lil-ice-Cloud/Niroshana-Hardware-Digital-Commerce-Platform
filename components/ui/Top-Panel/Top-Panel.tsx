@@ -2,11 +2,11 @@ import Link from "next/link";
 
 import SearchBar from '@/components/ui/Search-Bar/SearchBar';
 import {ShoppingCart} from "lucide-react";
-import Hamburger from "@/components/ui/Hamburger/Hamburger";
+import HamMenu from "@/components/ui/Hamburger/Ham-menu";
 
 export const navItem = [
     { name: 'Help', link: '/Help' },
-    { name: 'FQA', link: '/FQA' },
+    { name: 'FQA', link: '/FAQ' },
     { name: 'Blog', link: '/Blog' },
     { name: 'Official Partnerships', link: '/OfficialPartnerships' },
 ];
@@ -74,10 +74,8 @@ export default function TopPanel () {
                         <div>
                             <button className="
                                 bg-linear-to-r
-                                from-blue-600
-                                to-purple-600
-                                hover:from-green-400
-                                hover:to-indigo-600
+                                from-blue-400
+                                to-blue-900
                                 text-white
                                 transition-colors
                                 font-medium
@@ -110,7 +108,7 @@ export default function TopPanel () {
 
                             </button>
                         </div>
-                    </div><Hamburger/>
+                    </div><HamMenu/>
                 </div>
             </div>
         </nav>
