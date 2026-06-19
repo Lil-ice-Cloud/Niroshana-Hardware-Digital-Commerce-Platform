@@ -5,7 +5,7 @@ import Sidebar from "@/components/ui/SideBar/Sidebar";
 
 export const navItem = [
     { name: 'Help', link: '/Help' },
-    { name: 'FQA', link: '/FAQ' },
+    { name: 'FAQ', link: '/FAQ' },
     { name: 'Blog', link: '/Blog' },
     { name: 'Official Partnerships', link: '/OfficialPartnerships' },
 ];
@@ -91,7 +91,8 @@ export default function TopPanel () {
                         <div className=" ">
                             {/* Shopping Cart*/}
                             {/* eslint-disable-next-line jsx-a11y/aria-props */}
-                            <button aria-leble = "Shopping Cart" className="
+                            <button aria-leble = "Shopping Cart"
+                                    className="
                                     relative
                                     p-2
                                     text-muted-foreground

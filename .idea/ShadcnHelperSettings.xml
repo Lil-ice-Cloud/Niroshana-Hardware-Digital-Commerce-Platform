@@ -2742,6 +2742,18 @@
         <option name="homepage" value="https://shadcn-heatmap.pages.dev" />
         <option name="urlTemplate" value="https://shadcn-heatmap.pages.dev/r/{name}.json" />
       </RegistryConfigState>
+      <RegistryConfigState>
+        <option name="id" value="central-uui" />
+        <option name="name" value="Uui" />
+        <option name="namespace" value="@uui" />
+        <option name="baseUrl" value="https://uui.app/r" />
+        <option name="stylePath" value="/{name}.json" />
+        <option name="type" value="community" />
+        <option name="enabled" value="false" />
+        <option name="description" value="Inspiration for UI Interfaces. Discover UI ideas, micro-interactions, and components drawn from real products." />
+        <option name="homepage" value="https://uui.app" />
+        <option name="urlTemplate" value="https://uui.app/r/{name}.json" />
+      </RegistryConfigState>
     </registryConfigs>
   </component>
 </project>

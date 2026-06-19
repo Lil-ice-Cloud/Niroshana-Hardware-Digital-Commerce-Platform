@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import { Settings } from "lucide-react";
+import PriceRangeSlider from "@/components/ui/SideBar/PriceRangeSlider";
 
 export default function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,6 +9,7 @@ export default function Sidebar() {
     const toggleNav = () => {
         setIsOpen(!isOpen);
     }
+    // @ts-ignore
     return (
         <>
             <div>
@@ -50,14 +53,18 @@ export default function Sidebar() {
                         }`}></span>
                     </button>
                     {/* Sidebar ham-icon's title */}
-                    <div>Logo</div>
+                    <div>
+                        Options
+                    </div>
                 </nav>
                 {/* Sidebar content with hover animation */}
                 <div className={`
-                bg-gray-800 
+                bg-linear-to-r
+                from-blue-950
+                to-gray-800
                 text-white 
                 h-screen 
-                w-48 
+                w-70
                 top-0 
                 p-5 
                 transform
@@ -78,13 +85,8 @@ export default function Sidebar() {
                             </a>
                         </li>
                         <li className="
-                        hover:bg-blue-300
-                        p-2
-                        rounded-lg
                         ">
-                            <a href="#">
-                                About
-                            </a>
+                            <PriceRangeSlider/>
                         </li>
                         <li className="
                         hover:bg-blue-300
@@ -115,6 +117,36 @@ export default function Sidebar() {
                             <a href="#">
                                 Phone
                             </a>
+                        </li>
+                        {/* Settings icon */}
+                        <li className="
+                        bg-linear-to-r
+                        from-blue-400
+                        to-blue-900
+                        hover:from-blue-900
+                        hover:to-blue-400
+                        p-2
+                        rounded-lg
+                        ">
+                            <button className="
+                            flex
+                            item-center
+                            gap-2
+                            p-2
+                            rounded
+                            ">
+                                <Settings className="
+                                w-10
+                                h-auto
+                                text-blue-200
+                                hover:animate-spin
+                                "/>
+                                <span className="
+                                p-2
+                                ">
+                                    Settings
+                                </span>
+                            </button>
                         </li>
                     </ul>
                 </div>
