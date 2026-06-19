@@ -1,0 +1,42 @@
+[
+  {
+    "image": "../../assets/image1.png",
+    "imageMobile": "../../assets/image1.png",
+    "alt": "Power tools promotion banner",
+    "title": "Up to 30% Off Power Tools",
+    "subtitle": "DeWalt, Bosch & Makita — professional-grade tools at unbeatable prices. Limited time offer.",
+    "ctaLabel": "Shop Power Tools",
+    "ctaHref": "/category/power-tools",
+    "gradient": "left"
+  },
+  {
+    "image": "../../assets/image2.png",
+    "imageMobile": "../../assets/image2.png",
+    "alt": "Building materials promotion banner",
+    "title": "Quality Building Materials",
+    "subtitle": "Cement, steel, sand, bricks & everything you need for your construction project — delivered to your site.",
+    "ctaLabel": "Explore Materials",
+    "ctaHref": "/category/building-materials",
+    "gradient": "center"
+  },
+  {
+    "image": "../../assets/image3.png",
+    "imageMobile": "../../assets/image3.png",
+    "alt": "Paint and finishes promotion banner",
+    "title": "Premium Paints & Finishes",
+    "subtitle": "Transform your space with our wide range of interior and exterior paints, varnishes, and wood finishes.",
+    "ctaLabel": "View Paints",
+    "ctaHref": "/category/paints",
+    "gradient": "left"
+  },
+  {
+    "image": "../../assets/image4.png",
+    "imageMobile": "../../assets/image4.png",
+    "alt": "Plumbing and electrical supplies banner",
+    "title": "Plumbing & Electrical Supplies",
+    "subtitle": "PVC pipes, fittings, wiring, switches & more — trusted brands, bulk discounts available.",
+    "ctaLabel": "Shop Supplies",
+    "ctaHref": "/category/plumbing-electrical",
+    "gradient": "left"
+  }
+]
