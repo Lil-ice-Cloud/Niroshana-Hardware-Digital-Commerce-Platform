@@ -123,10 +123,10 @@ export default function Sidebar() {
                         <li className="
                         cursor-pointer
                         bg-linear-to-r
-                        from-red-500
-                        to-red-900
-                        hover:from-red-900
-                        hover:to-red-500
+                      from-red-500
+                      to-red-900
+                      hover:from-red-900
+                      hover:to-red-500
                         p-2
                         rounded-lg
                         ">
@@ -156,10 +156,10 @@ export default function Sidebar() {
                         <li className="
                         cursor-pointer
                         bg-linear-to-r
-                        from-red-500
-                        to-red-900
-                        hover:from-red-900
-                        hover:to-red-500
+                      from-red-500
+                      to-red-900
+                      hover:from-red-900
+                      hover:to-red-500
                         p-2
                         rounded-lg
                         ">
