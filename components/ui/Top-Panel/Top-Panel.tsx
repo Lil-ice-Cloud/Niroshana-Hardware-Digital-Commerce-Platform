@@ -13,6 +13,9 @@ export const navItem = [
 export default function TopPanel () {
     return (
         <nav className="
+        bg-linear-to-r
+      from-violet-900
+      to-blue-950
         fixed
         top-16
         left-0
@@ -24,6 +27,7 @@ export default function TopPanel () {
         border-border
         transition-colors
         duration-300
+        text-white
         ">
             <div className="
             max-w-7xl
@@ -40,18 +44,19 @@ export default function TopPanel () {
                         text-2xl
                         font-black
                         font-heading
-                        text-primary">
+                        text-primary
+                        ">
                             </h1>
                     </div>
                     {/* Desktop Navigation */}
                     <div className="
                     hidden
-                    md:flex ">
+                    md:flex
+                    ">
                         <div className="
                         flex
                         items-baseline
                         space-x-8
-
                         my-10
                         ">
                             {navItem.map((item) => (

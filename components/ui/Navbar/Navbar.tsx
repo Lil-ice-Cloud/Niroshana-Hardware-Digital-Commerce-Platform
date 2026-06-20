@@ -15,7 +15,9 @@ export default function Navbar () {
         left-0
         right-0
         z-50
-        bg-background/95
+        bg-linear-to-r
+        from-pink-700
+        to-indigo-900
         backdrop-blur-md
         border-b
         border-border
@@ -27,7 +29,8 @@ export default function Navbar () {
             mx-auto
             px-4
             sm:px-6
-            lg:px-8">
+            lg:px-8
+            ">
                 <div className="
                 flex
                 justify-between
@@ -37,24 +40,31 @@ export default function Navbar () {
                     <div >
                         <h1 className="
                         text-2xl
+                        text-white
                         font-black
                         font-heading
-                        text-primary">
-                            Niroshana Hardware.LK</h1>
+                        ">
+                            Niroshana Hardware.LK
+                        </h1>
                     </div>
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex ">
-                        <div className="flex items-baseline space-x-8">
+                    <div className="
+                    hidden
+                    md:flex
+                    ">
+                        <div className="
+                        flex
+                        items-baseline
+                        space-x-8
+                        ">
                             {navItem.map((item) => (
                                 <Link
                                     key={item.link}
                                     href={item.link}
                                     className="
-                                    hover:form-blue-700
-                                    hover:to-purple-600
-                                    transition-colors
-                                    font-medium"
-                                >
+                                    text-white
+                                    font-medium
+                                    ">
                                     {item.name}
                                 </Link>
                             ))}
@@ -62,9 +72,11 @@ export default function Navbar () {
                     </div>
                     {/* Loging and Signup */}
                     <div className="
-                    hidden md:flex
-                    items-baseline
-                    space-x-2">
+                        hidden
+                        md:flex
+                        items-baseline
+                        space-x-2
+                    ">
                         <button className="
                         bg-linear-to-r
                         from-blue-600
@@ -92,7 +104,8 @@ export default function Navbar () {
                         rounded-full
                         px-6
                         py-3
-                        "> Sign up
+                        ">
+                            Sign up
                         </button>
                     </div>
                 </div>
