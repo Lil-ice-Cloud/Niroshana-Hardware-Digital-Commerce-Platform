@@ -16,8 +16,8 @@ export default function Navbar () {
         right-0
         z-50
         bg-linear-to-r
-        from-pink-700
-        to-indigo-900
+        to-gray-400
+        from-gray-900
         backdrop-blur-md
         border-b
         border-border

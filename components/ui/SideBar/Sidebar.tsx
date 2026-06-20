@@ -60,9 +60,10 @@ export default function Sidebar() {
                 {/* Sidebar content with hover animation */}
                 <div className={`
                 bg-linear-to-r
-                from-blue-950
-                to-gray-800
-                text-white 
+              to-gray-600
+              to-gray-600
+              from-gray-900
+              text-white 
                 h-screen 
                 w-70
                 top-0 

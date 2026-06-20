@@ -14,8 +14,8 @@ export default function TopPanel () {
     return (
         <nav className="
         bg-linear-to-r
-      from-violet-900
-      to-blue-950
+        to-gray-400
+        from-gray-900
         fixed
         top-16
         left-0
@@ -100,9 +100,9 @@ export default function TopPanel () {
                                     className="
                                     relative
                                     p-2
-                                    text-muted-foreground
                                     hover:text-foreground
                                     transition-colors
+                                    text-white
                                     duration-200
                                     my-8
                                     ">
