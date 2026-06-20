@@ -16,8 +16,8 @@ export default function Navbar () {
         right-0
         z-50
         bg-linear-to-r
-        from-pink-700
-        to-indigo-900
+        to-gray-400
+        from-gray-900
         backdrop-blur-md
         border-b
         border-border
@@ -62,6 +62,9 @@ export default function Navbar () {
                                     key={item.link}
                                     href={item.link}
                                     className="
+                                    hover:bg-red-700
+                                    p-1
+                                    rounded-lg
                                     text-white
                                     font-medium
                                     ">
@@ -79,31 +82,33 @@ export default function Navbar () {
                     ">
                         <button className="
                         bg-linear-to-r
-                        from-blue-600
-                        to-purple-600
-                        hover:from-green-400
-                        hover:to-indigo-600
+                        from-red-500
+                        to-red-900
+                        hover:from-red-900
+                        hover:to-red-500
                         text-white
                         transition-colors
                         font-medium
                         rounded-full
                         px-6
                         py-3
+                        cursor-pointer
                         ">
                             Sign in
                         </button>
                         <button className="
                         bg-linear-to-r
-                        from-blue-600
-                        to-purple-600
-                        hover:from-green-400
-                        hover:to-indigo-600
+                        from-red-500
+                        to-red-900
+                        hover:from-red-900
+                        hover:to-red-500
                         text-white
                         transition-colors
                         font-medium
                         rounded-full
                         px-6
                         py-3
+                        cursor-pointer
                         ">
                             Sign up
                         </button>

@@ -14,8 +14,8 @@ export default function TopPanel () {
     return (
         <nav className="
         bg-linear-to-r
-      from-violet-900
-      to-blue-950
+      to-gray-400
+      from-gray-900
         fixed
         top-16
         left-0
@@ -63,8 +63,12 @@ export default function TopPanel () {
                                 <Link
                                     key={item.link}
                                     href={item.link}
-                                    className=""
-                                >
+                                    className="
+                                  hover:bg-red-700
+                                    cursor-pointer
+                                    rounded-lg
+                                    font-medium
+                                    ">
                                     {item.name}
                                 </Link>
                             ))}
@@ -78,8 +82,8 @@ export default function TopPanel () {
                         <div>
                             <button className="
                                 bg-linear-to-r
-                                from-blue-400
-                                to-blue-900
+                                from-red-500
+                                to-red-900
                                 text-white
                                 transition-colors
                                 font-medium
@@ -100,9 +104,9 @@ export default function TopPanel () {
                                     className="
                                     relative
                                     p-2
-                                    text-muted-foreground
                                     hover:text-foreground
                                     transition-colors
+                                  text-white
                                     duration-200
                                     my-8
                                     ">

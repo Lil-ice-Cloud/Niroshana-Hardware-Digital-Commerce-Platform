@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Settings } from "lucide-react";
+import {Settings, Users} from "lucide-react";
 import PriceRangeSlider from "@/components/ui/SideBar/PriceRangeSlider";
 
 export default function Sidebar() {
@@ -17,17 +17,17 @@ export default function Sidebar() {
                 p-5
                 flex
                 gap-5
-
                 ">
                     {/* Naw bar animation */}
                     <button onClick={toggleNav} className={`
-                    space-y-1
+                    space-y-1 
+                    cursor-pointer
                     `}>
                         <span className={`
                         block 
                         h-1 
                         w-6 
-                        bg-gray-800 
+                        bg-white 
                         ${isOpen ? 
                             "rotate-45 " +
                             "translate-y-2" : ''
@@ -37,7 +37,7 @@ export default function Sidebar() {
                             `block 
                             h-1 
                             w-6 
-                            bg-gray-800 
+                            bg-white 
                         ${isOpen ? 
                                 "opacity-0" : ''
                             }`}></span>
@@ -46,7 +46,7 @@ export default function Sidebar() {
                         block 
                         h-1 
                         w-6 
-                        bg-gray-800 
+                        bg-white  
                         ${isOpen ? 
                             "-rotate-45 " +
                             "-translate-y-2" : ''
@@ -60,9 +60,9 @@ export default function Sidebar() {
                 {/* Sidebar content with hover animation */}
                 <div className={`
                 bg-linear-to-r
-                from-blue-950
-                to-gray-800
-                text-white 
+              to-gray-600
+              from-gray-900
+              text-white 
                 h-screen 
                 w-70
                 top-0 
@@ -113,22 +113,25 @@ export default function Sidebar() {
                         <li className="
                         hover:bg-blue-300
                         p-2
-                        rounded-lg">
+                        rounded-lg
+                        ">
                             <a href="#">
                                 Phone
                             </a>
                         </li>
                         {/* Settings icon */}
                         <li className="
+                        cursor-pointer
                         bg-linear-to-r
-                        from-blue-400
-                        to-blue-900
-                        hover:from-blue-900
-                        hover:to-blue-400
+                        from-red-500
+                        to-red-900
+                        hover:from-red-900
+                        hover:to-red-500
                         p-2
                         rounded-lg
                         ">
                             <button className="
+                            cursor-pointer
                             flex
                             item-center
                             gap-2
@@ -136,6 +139,7 @@ export default function Sidebar() {
                             rounded
                             ">
                                 <Settings className="
+                                cursor-pointer
                                 w-10
                                 h-auto
                                 text-blue-200
@@ -145,6 +149,39 @@ export default function Sidebar() {
                                 p-2
                                 ">
                                     Settings
+                                </span>
+                            </button>
+                        </li>
+                        {/* Accounts icon */}
+                        <li className="
+                        cursor-pointer
+                        bg-linear-to-r
+                        from-red-500
+                        to-red-900
+                        hover:from-red-900
+                        hover:to-red-500
+                        p-2
+                        rounded-lg
+                        ">
+                            <button className="
+                            cursor-pointer
+                            flex
+                            item-center
+                            gap-2
+                            p-2
+                            rounded
+                            ">
+                                <Users className="
+                                cursor-pointer
+                                w-10
+                                h-auto
+                              text-blue-200
+                                hover:animate-spin
+                                "/>
+                                <span className="
+                                p-2
+                                ">
+                                    Accounts
                                 </span>
                             </button>
                         </li>
