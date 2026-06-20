@@ -176,7 +176,7 @@ export default function Sidebar() {
                                 w-10
                                 h-auto
                               text-blue-200
-                                hover:animate-spin
+                                hover:animate-bounce
                                 "/>
                                 <span className="
                                 p-2
