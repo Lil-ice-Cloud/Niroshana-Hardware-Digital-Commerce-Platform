@@ -80,7 +80,7 @@ export default function Navbar () {
                             ))}
                         </div>
                     </div>
-                    {/* Loging and Signup */}
+                    {/* Logging and Signup */}
                     <div className="
                         hidden
                         md:flex

@@ -31,6 +31,7 @@ export default function TopPanel () {
         ">
             <div className="
             max-w-7xl
+            mx-auto
             px-4
             ">
                 <div className="
@@ -52,12 +53,14 @@ export default function TopPanel () {
                     <div className="
                     hidden
                     md:flex
+                    items-center
+                    space-x-6
                     ">
                         <div className="
                         flex
-                        items-baseline
+                        items-center
                         space-x-8
-                        my-10
+
                         ">
                             {navItem.map((item) => (
                                 <Link
@@ -65,6 +68,8 @@ export default function TopPanel () {
                                     href={item.link}
                                     className="
                                   hover:bg-red-700
+                                    px-3
+                                    py-2
                                     cursor-pointer
                                     rounded-lg
                                     font-medium
@@ -89,10 +94,10 @@ export default function TopPanel () {
                                 font-medium
                                 rounded-full
                                 px-6
-                                py-3
+                                py-2
                                 ml-8
                                 md:flex
-                                my-8
+
                                 ">
                                 Search
                             </button>
@@ -108,7 +113,7 @@ export default function TopPanel () {
                                     transition-colors
                                   text-white
                                     duration-200
-                                    my-8
+
                                     ">
                                 <ShoppingCart className="
                                         h-7
@@ -124,13 +129,15 @@ export default function TopPanel () {
                             fixed
                             top-0
                             left-0
-                            right-0
-                            border-b
                             border-border
                             transition-colors
                             duration-300
+                            pointer-events-none
+                            z-50
                             ">
-                        <div>
+                        <div className="
+                        pointer-events-auto
+                        ">
                             <Sidebar/>
                         </div>
                     </div>
