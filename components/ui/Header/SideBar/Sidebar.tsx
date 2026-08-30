@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import {Settings, Users} from "lucide-react";
-import PriceRangeSlider from "@/components/ui/SideBar/PriceRangeSlider";
+import PriceRangeSlider from "@/components/ui/Header/SideBar/PriceRangeSlider";
 
 export default function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);

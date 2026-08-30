@@ -1,7 +1,7 @@
 import Link from "next/link";
-import SearchBar from '@/components/ui/Search-Bar/SearchBar';
+import SearchBar from '@/components/ui/Header/Search-Bar/SearchBar';
 import {ShoppingCart} from "lucide-react";
-import Sidebar from "@/components/ui/SideBar/Sidebar";
+import Sidebar from "@/components/ui/Header/SideBar/Sidebar";
 
 export const navItem = [
     { name: 'Help', link: '/Help' },
