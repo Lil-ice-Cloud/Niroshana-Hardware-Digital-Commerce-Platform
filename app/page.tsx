@@ -1,5 +1,5 @@
-import Navbar from "@/components/ui/Navbar/Navbar";
-import TopPanel from "@/components/ui/Top-Panel/Top-Panel"
+import Navbar from "@/components/ui/Header/Navbar/Navbar";
+import TopPanel from "@/components/ui/Header/Top-Panel/Top-Panel"
 
 export default function Home() {
   return (

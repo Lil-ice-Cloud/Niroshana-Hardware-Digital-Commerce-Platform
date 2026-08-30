@@ -4,16 +4,20 @@ export default function SearchBar() {
     return (
         <div className="
         relative
+        z-10
         w-full
         max-w-md
+        my-8
         ">
             {/* Search Icon Container */}
             <div className="
             absolute
             inset-y-0
-            left-0 flex
+            left-0
+            flex
             items-center
             pl-3
+            bottom-2
             pointer-events-none
             text-muted-foreground
             ">
@@ -37,7 +41,7 @@ export default function SearchBar() {
                 text-foreground
                 border
                 border-input
-                rounded-md my-8
+                rounded-md
                 focus:outline-none
                 focus:ring-2
                 focus:ring-primary

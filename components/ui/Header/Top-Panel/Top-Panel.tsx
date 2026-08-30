@@ -1,12 +1,11 @@
 import Link from "next/link";
-
-import SearchBar from '@/components/ui/Search-Bar/SearchBar';
+import SearchBar from '@/components/ui/Header/Search-Bar/SearchBar';
 import {ShoppingCart} from "lucide-react";
-import Hamburger from "@/components/ui/Hamburger/Hamburger";
+import Sidebar from "@/components/ui/Header/SideBar/Sidebar";
 
 export const navItem = [
     { name: 'Help', link: '/Help' },
-    { name: 'FQA', link: '/FQA' },
+    { name: 'FAQ', link: '/FAQ' },
     { name: 'Blog', link: '/Blog' },
     { name: 'Official Partnerships', link: '/OfficialPartnerships' },
 ];
@@ -14,6 +13,9 @@ export const navItem = [
 export default function TopPanel () {
     return (
         <nav className="
+        bg-linear-to-r
+      to-gray-400
+      from-gray-900
         fixed
         top-16
         left-0
@@ -25,6 +27,7 @@ export default function TopPanel () {
         border-border
         transition-colors
         duration-300
+        text-white
         ">
             <div className="
             max-w-7xl
@@ -41,26 +44,31 @@ export default function TopPanel () {
                         text-2xl
                         font-black
                         font-heading
-                        text-primary">
+                        text-primary
+                        ">
                             </h1>
                     </div>
                     {/* Desktop Navigation */}
                     <div className="
                     hidden
-                    md:flex ">
+                    md:flex
+                    ">
                         <div className="
                         flex
                         items-baseline
                         space-x-8
-
                         my-10
                         ">
                             {navItem.map((item) => (
                                 <Link
                                     key={item.link}
                                     href={item.link}
-                                    className=""
-                                >
+                                    className="
+                                  hover:bg-red-700
+                                    cursor-pointer
+                                    rounded-lg
+                                    font-medium
+                                    ">
                                     {item.name}
                                 </Link>
                             ))}
@@ -74,10 +82,8 @@ export default function TopPanel () {
                         <div>
                             <button className="
                                 bg-linear-to-r
-                                from-blue-600
-                                to-purple-600
-                                hover:from-green-400
-                                hover:to-indigo-600
+                                from-red-500
+                                to-red-900
                                 text-white
                                 transition-colors
                                 font-medium
@@ -94,12 +100,13 @@ export default function TopPanel () {
                         <div className=" ">
                             {/* Shopping Cart*/}
                             {/* eslint-disable-next-line jsx-a11y/aria-props */}
-                            <button aria-leble = "Shopping Cart" className="
+                            <button aria-leble = "Shopping Cart"
+                                    className="
                                     relative
                                     p-2
-                                    text-muted-foreground
                                     hover:text-foreground
                                     transition-colors
+                                  text-white
                                     duration-200
                                     my-8
                                     ">
@@ -110,7 +117,23 @@ export default function TopPanel () {
 
                             </button>
                         </div>
-                    </div><Hamburger/>
+                    </div>
+                    {/* Sidebar Link to the top-panel */}
+                    <div
+                        className="
+                            fixed
+                            top-0
+                            left-0
+                            right-0
+                            border-b
+                            border-border
+                            transition-colors
+                            duration-300
+                            ">
+                        <div>
+                            <Sidebar/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
