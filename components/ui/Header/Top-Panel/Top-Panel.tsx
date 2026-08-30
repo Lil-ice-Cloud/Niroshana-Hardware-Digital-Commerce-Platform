@@ -36,7 +36,7 @@ export default function TopPanel () {
             ">
                 <div className="
                 flex
-                justify-between
+                justify-end
                 items-center
                 h-16
                 ">
@@ -54,6 +54,7 @@ export default function TopPanel () {
                     hidden
                     md:flex
                     items-center
+                    ml-auto
                     space-x-6
                     ">
                         <div className="
@@ -73,14 +74,14 @@ export default function TopPanel () {
                                     cursor-pointer
                                     rounded-lg
                                     font-medium
+                                    transition-colors
                                     ">
                                     {item.name}
                                 </Link>
                             ))}
                         </div>
                         <div className="
-                        ml-8
-                        md:flex
+                        w-64
                         ">
                             <SearchBar/>
                         </div>
@@ -97,7 +98,7 @@ export default function TopPanel () {
                                 py-2
                                 ml-8
                                 md:flex
-
+                                cursor-pointer
                                 ">
                                 Search
                             </button>
@@ -113,7 +114,7 @@ export default function TopPanel () {
                                     transition-colors
                                   text-white
                                     duration-200
-
+                                    cursor-alias
                                     ">
                                 <ShoppingCart className="
                                         h-7
