@@ -184,6 +184,28 @@ export default function Navbar () {
                     <div className="
                     pt-4
                     border-t
+                    border-red-700
+                    flex
+                    flex-col
+                    space-y-2
+                    ">
+                        <button className="
+                            w-full
+                            bg-linear-to-r
+                            from-white
+                            to-gray-800
+                            text-white
+                            font-medium
+                            rounded-full
+                            py-2
+                            cursor-pointer
+                            ">
+                            Search
+                        </button>
+                    </div>
+                    <div className="
+                    pt-4
+                    border-t
                     border-gray-700
                     flex
                     flex-col
