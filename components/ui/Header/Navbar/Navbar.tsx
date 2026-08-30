@@ -2,12 +2,20 @@
 
 import {useState} from "react";
 import Link from "next/link";
+import SearchBar from "@/components/ui/Header/Search-Bar/SearchBar";
 
 export const navItem = [
     { name: 'Home', link: '/' },
     { name: 'About', link: '/about' },
     { name: 'Contact', link: '/contact' },
     { name: 'Pricing', link: '/pricing' },
+];
+    // Top-panel Shortcuts Mobile view only
+export const Useful_Links = [
+    { name: 'Help', link: '/Help' },
+    { name: 'FAQ', link: '/FAQ' },
+    { name: 'Blog', link: '/Blog' },
+    { name: 'Official Partnerships', link: '/OfficialPartnerships' },
 ];
 
 export default function Navbar () {
@@ -61,8 +69,8 @@ export default function Navbar () {
                     ">
                         <div className="
                         flex
-                        items-baseline
-                        space-x-8
+                        items-center
+                        space-x-4
                         ">
                             {navItem.map((item) => (
                                 <Link
@@ -80,6 +88,7 @@ export default function Navbar () {
                             ))}
                         </div>
                     </div>
+
                     {/* Logging and Signup */}
                     <div className="
                         hidden
@@ -120,6 +129,7 @@ export default function Navbar () {
                             Sign up
                         </button>
                     </div>
+
                     {/* Mobile Hamburger */}
                     <div className="
                     flex
@@ -152,16 +162,17 @@ export default function Navbar () {
                 </div>
             </div>
         </div>
+
             {/* Mobile Menu Panel */}
             {isOpen && (
                 <div className="
                 md:hidden
-                bg-gray-900
+              bg-gray-900
                 border-b
                 border-border
-                px-4
+                px-6
                 pt-2
-                pb-4
+                pb-6
                 space-y-3
                 ">
                     {navItem.map((item) => (
@@ -181,35 +192,78 @@ export default function Navbar () {
                             {item.name}
                        </Link>
                     ))}
+                    {/* Usfull Link sections*/}
                     <div className="
-                    pt-4
+                    pt-2
+                    border-t
+                    border-gray-800
+                    space-y-2
+                    ">
+                        <p className="
+                        text-xs
+                        font-semibold
+                        text-gray-500
+                        uppercase
+                        px-2
+                        tracking-wider
+                        ">
+                            Useful Links
+                        </p>
+                        {Useful_Links.map((item) => (
+                            <Link
+                                key={item.link}
+                                href={item.link}
+                                className="
+                                block
+                              hover:bg-gray-800
+                                p-2
+                                rounded-lg
+                                text-white
+                                font-medium
+                                text-sm
+                                transition-colors
+                                ">
+                                    {item.name}
+                            </Link>
+                        ))}
+                    </div>
+                    {/* search bar */}
+                    <div className="
+                    pt-2
                     border-t
                     border-red-700
                     flex
                     flex-col
+                    items-center
                     space-y-2
+
                     ">
+                        <SearchBar/>
                         <button className="
                             w-full
+                            max-w-md
                             bg-linear-to-r
                             from-white
                             to-gray-800
                             text-white
                             font-medium
-                            rounded-full
+                            rounded-md
                             py-2
                             cursor-pointer
                             ">
                             Search
                         </button>
                     </div>
+
+                    {/* Access section */}
                     <div className="
                     pt-4
                     border-t
                     border-gray-700
                     flex
                     flex-col
-                    space-y-2
+                    items-center
+                    space-y-3
                     ">
                         <button className="
                         w-full

@@ -7,7 +7,7 @@ export default function SearchBar() {
         z-10
         w-full
         max-w-md
-        my-8
+
         ">
             {/* Search Icon Container */}
             <div className="
@@ -17,14 +17,12 @@ export default function SearchBar() {
             flex
             items-center
             pl-3
-            bottom-2
             pointer-events-none
-            text-muted-foreground
+            text-gray-900
             ">
                 <Search className="
                 h-5
                 w-5"
-
                 />
             </div>
 
@@ -37,17 +35,18 @@ export default function SearchBar() {
                 pl-10
                 pr-4
                 py-2
-                bg-background
-                text-foreground
+                bg-white
+              text-gray-900
                 border
-                border-input
+                border-gray-300
                 rounded-md
                 focus:outline-none
                 focus:ring-2
-                focus:ring-primary
+                focus:ring-red-500
                 focus:border-transparent
                 transition-all
-                duration-200"
+                duration-200
+                "
             />
         </div>
     );
